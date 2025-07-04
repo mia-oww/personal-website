@@ -1,0 +1,128 @@
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blinkCaret {
+    0%, 100% { border-color: transparent }
+    50% { border-color: white }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #9c82a3, #9c82a3, #9c82a3);
+  background-size: 200% 200%;
+  animation: buttonShift 6s ease infinite;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background-position: 100% 0;
+  box-shadow: 0 0 10px #9c82a3, 0 0 20px #5a4562;
+}
+
+@keyframes buttonShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.glow-text {
+  color: #ffffff;
+  text-shadow: black
+}
+
+.animate-gradient {
+ background: linear-gradient(
+   90deg,
+   #121212,  /* very dark */
+   #3a3a3c,  /* medium dark gray */
+   #121212,
+   #3a3a3c
+ );
+ background-size: 400% 400%; /* bigger gradient for more visible movement */
+ animation: gradientShift 20s ease-in-out infinite;
+ color: white;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; 
+}
+
+
+
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.name {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900; /* max thickness */
+  font-size: 3rem; /* big enough to pop */
+}
+
+.text-outline {
+  color: white;
+  text-shadow:
+    -0.5px -0.5px 0 #9c82a3,
+     0.5px -0.5px 0 #9c82a3,
+    -0.5px  0.5px 0 #9c82a3,
+     0.5px  0.5px 0 #9c82a3;
+}
+
+.section-spacing {
+  padding-top: 10rem; /* equivalent to pt-40 */
+  margin-bottom: 10rem; /* equivalent to mb-40 */
+}
+
+.text-glow {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+
